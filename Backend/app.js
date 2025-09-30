@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+// const port = 3000;
+const port = process.env.PORT || 3000;
+
 const cors = require("cors");
 const connectDB = require("./db");
 const Task = require("./models/Task"); // adjust path if needed
@@ -31,7 +33,7 @@ app.post("/task", async (req, res) => {
     res.status(201).json(savedTask);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ ree: "Failed to save task" });
+    res.status(500).json({ error: "Failed to save task" });
   }
 });
 
