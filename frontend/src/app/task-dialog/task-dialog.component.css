@@ -1,0 +1,33 @@
+/* Center the dialog content nicely */
+mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space between elements */
+  min-width: 250px;
+}
+
+/* Style the input field */
+mat-form-field {
+  width: 100%;
+}
+
+/* Style the dialog title */
+h1[mat-dialog-title] {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Style the action buttons */
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end; /* buttons on the right */
+  gap: 8px; /* space between buttons */
+  margin-top: 16px;
+}
+
+/* Optional: style buttons */
+button[mat-button] {
+  min-width: 70px;
+}

@@ -1,0 +1,11 @@
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo"><h3> <a [routerLink]="['']" style="color: white;"> To-Do App</a></h3></div>
+  <ul class="nav-links">
+    <li><a routerLink="/add-task">Add Task</a></li>
+    <li><a routerLink="/see-task">See Task</a></li>
+  </ul>
+</nav>
+
+<!-- Routed views will load here -->
+<router-outlet></router-outlet>

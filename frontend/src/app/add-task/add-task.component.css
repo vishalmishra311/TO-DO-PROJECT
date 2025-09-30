@@ -1,0 +1,61 @@
+.task-container {
+  max-width: 400px;
+  margin: 100px auto 0;
+  padding: 20px;
+  background: #bbd1eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(12, 123, 208, 0.1);
+  font-family: Arial, sans-serif;
+  border: 2px solid black;
+}
+.task-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: url("./img.jpg") no-repeat center center / cover; /* Use image OR replace with solid color like #f4f4f4 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* prevents edge collision in mobile */
+}
+
+.task-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 20px;
+}
+
+.task-form mat-form-field,
+.task-form input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.task-form input {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.task-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-form button:disabled {
+  background-color: #9fa8da;
+  cursor: not-allowed;
+}
+
+.task-form button:hover:not(:disabled) {
+  background-color: #303f9f;
+}
