@@ -98,6 +98,11 @@ app.put("/updateTask/:id", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ API is running! Available routes: /task, /getTaskDeatils, /getTaskbyId/:id, /updateTask/:id, /task/:id");
+});
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
